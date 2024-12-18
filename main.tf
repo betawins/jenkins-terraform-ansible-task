@@ -3,11 +3,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "backend" { #ubuntu.yaml NETADATA
-  ami                    = "ami-0166fe664262f664c"
+  ami                    = "ami-0e2c8caa4b6378d8c"
   instance_type          = "t2.micro" 
   key_name               = "jenkinsmaster"
   tags = {
-    Name = "u21.local"
+    Name = "u21.local" 
   }
   user_data = <<-EOF
   #!/bin/bash
